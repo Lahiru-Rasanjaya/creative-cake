@@ -21,6 +21,21 @@ include "./include/header.php";
                 </div>
             </div>
             <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/banner-one.jpg" alt="banner image">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <p class="text-primary text-uppercase fw-bold mb-2">// The Best Cake</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Cakes Baked With Love</h1>
+                                <p class="text-light fs-5 mb-4 pb-3">Delicious cakes baked with passion and the finest ingredients.</p>
+                                <a href="#products" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/banner2.webp" alt="banner image">
                 <div class="owl-carousel-inner">
                     <div class="container">
