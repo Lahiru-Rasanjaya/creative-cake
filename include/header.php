@@ -74,12 +74,7 @@
                 <a href="index.php" class="nav-item nav-link <?php echo($page == "index")?'active':''; ?>">Home</a>
                 <a href="about.php" class="nav-item nav-link <?php echo($page == "about")?'active':''; ?>">About</a>
                 <a href="service.php" class="nav-item nav-link <?php echo($page == 'cervices')?'active':''?>">Services</a>
-                <div class="nav-item dropdown">
-                    <a href="product.php" class="nav-link dropdown-toggle <?php echo($page == 'product')?'active':''?>" >Products</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="clickProduct.php" class="dropdown-item <?php echo($page == 'pages')?'active':''?>">click Product</a>
-                    </div>
-                </div>
+                <a href="product.php" class="nav-item nav-link <?php echo($page == 'product')?'active':''?>">Products</a>
                 <a href="contact.php" class="nav-item nav-link <?php echo($page == 'contact')?'active':''?>">Contact</a>
             </div>
             <div class=" d-none d-lg-flex">
