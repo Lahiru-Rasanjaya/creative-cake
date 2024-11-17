@@ -244,7 +244,13 @@ include "./include/header.php";
                     </div>
                 </div>
             </div>
-            <!-- Service End -->
-            <?php
-            include "./include/footer.php";
-            ?>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Service End -->
+<?php
+    include "./include/footer.php";
+?>
