@@ -1,7 +1,7 @@
 <?php 
 include "./include/header.php";
 
-include '../db_connect.php';
+include './db_connect.php';
 
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $categoryId = intval($_GET['id']);

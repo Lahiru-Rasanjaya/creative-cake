@@ -131,6 +131,7 @@ include "./include/header.php";
         </div>
     </div>
 </div>
+
 <!-- Facts End -->
 
 <!-- Product Start -->
@@ -177,12 +178,18 @@ include "./include/header.php";
                             </div>
                         </div>
                     </div>
+                    
                 <?php endwhile; ?>
             <?php else: ?>
                 <div class="col-12">
                     <p class="text-center">No categories found.</p>
                 </div>
             <?php endif; ?>
+            </div>
+            </div>
+            </div>
+            </div>
+
 
             <!-- Service Start -->
             <div class="container-xxl my-6">
