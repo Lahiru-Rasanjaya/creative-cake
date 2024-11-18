@@ -144,7 +144,7 @@ include "./include/header.php";
 
             <?php
             // Include database connection
-            include('../db_connect.php');
+            include('./db_connect.php');
 
             // Fetch category data
             $categoryQuery = "SELECT * FROM category";
@@ -154,7 +154,7 @@ include "./include/header.php";
             <?php if ($categoryResult->num_rows > 0): ?>
                 <?php while ($row = $categoryResult->fetch_assoc()): ?>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="">
                             <div class="text-center p-4">
                                 <!-- Display price range dynamically -->
                                 <div class="d-inline-block border border-primary rounded-pill px-3 mb-3">

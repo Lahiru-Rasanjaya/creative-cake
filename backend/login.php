@@ -1,7 +1,7 @@
 <?php
 // Start the session
 session_start();
-include '../../db_connect.php'; // Include database connection
+include '../db_connect.php'; // Include database connection
 
 // Handle form submission
 if (isset($_POST['login'])) {
@@ -26,9 +26,8 @@ if (isset($_POST['login'])) {
                 if (password_verify($password, $user['password'])) {
                     // Set session variable for logged-in user
                     $_SESSION['username'] = $username;
-
                     // Redirect to the dashboard
-                    header("Location: ../../creativeCake-admin/index.php");
+                    header("Location: ../creativeCake-admin/index.php");
                     exit();
                 } else {
                     $message = "Invalid password. Please try again.";

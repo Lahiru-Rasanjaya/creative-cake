@@ -22,10 +22,20 @@ $message = isset($_GET['message']) ? urldecode($_GET['message']) : '';
 $msgType = isset($_GET['type']) ? $_GET['type'] : '';
 ?>
 
-
+<?php if ($message): ?>
+                            <div id="alertBox" class="alert 
+                                <?php echo $msgType === 'success' ? 'alert-success' : 'alert-danger'; ?> 
+                                alert-dismissible fade show" role="alert" style="position: relative; margin: -4rem 5rem 2rem 5rem;">
+                                <span><?php echo htmlspecialchars($message); ?></span>
+                                <!-- Bootstrap Close Button aligned to the right and vertically centered -->
+                                <p id="closeAlert" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+                                    x
+                                </p>
+                            </div>
+                        <?php endif; ?>
 
 <!-- Contact Start -->
-<div class="container-xxl py-6" style="margin-top: -6rem;">
+<div class="container-xxl py-6" id="contact" style="margin-top: -6rem;">
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
             <p class="text-primary text-uppercase mb-2">// Contact Us</p>
@@ -37,39 +47,29 @@ $msgType = isset($_GET['type']) ? $_GET['type'] : '';
                 <form action="./backend/contact_process.php" method="POST">
                     <div class="row g-3">
 
-                        <?php if ($message): ?>
-                            <div id="alertBox" class="alert 
-                                <?php echo $msgType === 'success' ? 'alert-success' : 'alert-danger'; ?> 
-                                alert-dismissible fade show mb-4" role="alert" style="position: relative;">
-                                <span><?php echo htmlspecialchars($message); ?></span>
-                                <!-- Bootstrap Close Button aligned to the right and vertically centered -->
-                                <p id="closeAlert" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
-                                    x
-                                </p>
-                            </div>
-                        <?php endif; ?>
+                       
                         
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
                                 <label for="name">Your Name</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="contact_number" name="contact_number" placeholder="Your contact number">
+                                <input type="text" class="form-control" id="contact_number" name="contact_number" required placeholder="Your contact number">
                                 <label for="contact_number">Contact Number</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                <input type="text" class="form-control" id="subject" name="subject" required placeholder="Subject">
                                 <label for="subject">Subject</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                                <textarea class="form-control" name="message" required placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
                                 <label for="message">Message</label>
                             </div>
                         </div>

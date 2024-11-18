@@ -1,6 +1,6 @@
 <?php
 // Include database connection
-include '../../db_connect.php';
+include '../db_connect.php';
 
 if (($_SERVER["REQUEST_METHOD"] === "POST") && (isset($_POST['submit']))) {
     // Get form data

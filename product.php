@@ -46,7 +46,7 @@ include "./include/header.php";
 
             <?php
             // Include database connection
-            include('../db_connect.php');
+            include('./db_connect.php');
 
             // Fetch category data
             $categoryQuery = "SELECT * FROM category";
