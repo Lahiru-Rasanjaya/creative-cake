@@ -135,13 +135,14 @@ include "./include/header.php";
 <!-- Facts End -->
 
 <!-- Product Start -->
-<div class="container-xxl bg-light my-6 py-6 " style="margin-top: -1rem;" id="products"> <!-- Added negative margin-top here -->
+<div class="container-xxl bg-light my-6 py-6" style="margin-top: -1rem;" id="products">
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
             <p class="text-primary text-uppercase mb-2">// Cake Products</p>
             <h1 class="display-6 mb-4">Explore The Categories Of Our Cake Products</h1>
         </div>
-        <div class="row g-4">
+
+        <div class="row g-4 d-flex flex-wrap justify-content-center">
 
             <?php
             // Include database connection
@@ -168,7 +169,7 @@ include "./include/header.php";
                             </div>
                             <div class="position-relative mt-auto">
                                 <!-- Display image dynamically -->
-                                <img class="img-fluid" src="data:image/*;base64,<?= $row['category_image'] ?>" alt="<?= htmlspecialchars($row['category_name']) ?>">
+                                <img class="img-fluid" src="data:image/*;base64,<?= $row['category_image'] ?>" alt="<?= htmlspecialchars($row['category_name']) ?>" style="object-fit: cover; width: 100%; height: 240px;">
                                 <div class="product-overlay">
                                     <!-- View button (you can link to details page here) -->
                                     <a class="btn btn-lg-square btn-outline-light rounded-circle" href="view_product.php?id=<?= $row['category_id'] ?>">
@@ -178,16 +179,16 @@ include "./include/header.php";
                             </div>
                         </div>
                     </div>
-                    
                 <?php endwhile; ?>
             <?php else: ?>
                 <div class="col-12">
                     <p class="text-center">No categories found.</p>
                 </div>
             <?php endif; ?>
-            </div>
-            </div>
-            </div>
+        </div>
+    </div>
+</div>
+
             </div>
 
 
