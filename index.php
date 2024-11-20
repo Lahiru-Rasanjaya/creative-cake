@@ -55,7 +55,7 @@ include "./include/header.php";
 <!-- Carousel End -->
 
 <!-- About Start -->
-<div class="container-xxl  my-6" id="about">
+<div class="my-6" id="about">
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp">
@@ -97,7 +97,7 @@ include "./include/header.php";
 <!-- About End -->
 
 <!-- Facts Start -->
-<div class="container-xxl py-6" style="background-color: #A2AD9C;">
+<div class="py-6" style="background-color: #A2AD9C;">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
@@ -135,7 +135,7 @@ include "./include/header.php";
 <!-- Facts End -->
 
 <!-- Product Start -->
-<div class="container-xxl bg-light my-6 py-6" style="margin-top: -1rem;" id="products">
+<div class="bg-light my-6 py-6" style="margin-top: -1rem;" id="products">
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
             <p class="text-primary text-uppercase mb-2">// Cake Products</p>
@@ -251,10 +251,7 @@ include "./include/header.php";
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
+                </div>
 
 
 
