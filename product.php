@@ -20,7 +20,7 @@ include "./include/header.php";
 
 
 <!-- Product Start -->
-<div class="container-xxl bg-light py-6 pt-0" style="margin-top: -6rem;">
+<div class="bg-light py-6 pt-0" style="margin-top: -6rem;">
     <div class="container">
         <div class="bg-primary text-light rounded-bottom p-5 my-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
             <div class="row g-4 align-items-center">
@@ -42,7 +42,7 @@ include "./include/header.php";
             <p class="text-primary text-uppercase mb-2">// Cake Products</p>
             <h1 class="display-6 mb-4">Explore The Categories Of Our Cake Products</h1>
         </div>
-        <div class="row g-4">
+        <div class="row g-4 d-flex flex-wrap justify-content-center">
 
             <?php
             // Include database connection

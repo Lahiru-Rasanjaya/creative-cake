@@ -23,16 +23,16 @@ $msgType = isset($_GET['type']) ? $_GET['type'] : '';
 ?>
 
 <?php if ($message): ?>
-                            <div id="alertBox" class="alert 
+    <div id="alertBox" class="alert 
                                 <?php echo $msgType === 'success' ? 'alert-success' : 'alert-danger'; ?> 
                                 alert-dismissible fade show" role="alert" style="position: relative; margin: -4rem 5rem 2rem 5rem;">
-                                <span><?php echo htmlspecialchars($message); ?></span>
-                                <!-- Bootstrap Close Button aligned to the right and vertically centered -->
-                                <p id="closeAlert" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
-                                    x
-                                </p>
-                            </div>
-                        <?php endif; ?>
+        <span><?php echo htmlspecialchars($message); ?></span>
+        <!-- Bootstrap Close Button aligned to the right and vertically centered -->
+        <p id="closeAlert" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+            x
+        </p>
+    </div>
+<?php endif; ?>
 
 <!-- Contact Start -->
 <div class="container-xxl py-6" id="contact" style="margin-top: -6rem;">
@@ -47,8 +47,8 @@ $msgType = isset($_GET['type']) ? $_GET['type'] : '';
                 <form action="./backend/contact_process.php" method="POST">
                     <div class="row g-3">
 
-                       
-                        
+
+
                         <div class="col-md-6">
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
@@ -86,7 +86,7 @@ $msgType = isset($_GET['type']) ? $_GET['type'] : '';
 
 
 <!-- Google Map Start -->
-<div class="container-xxl px-0 wow fadeInUp" data-wow-delay="0.1s">
+<div class="px-0 wow fadeInUp" data-wow-delay="0.1s">
     <iframe class="w-100 mb-n2" style="height: 450px;"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63293.76060101959!2d80.3165803333291!3d7.480703540812434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3398ab06be8b9%3A0x1f90e4e71e885052!2sKurunegala!5e0!3m2!1sen!2slk!4v1731401764268!5m2!1sen!2slk"
         frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
